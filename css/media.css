@@ -163,7 +163,11 @@
         margin-left: 20px;
 		display: inline-block;
 	}
-.menu {
+    .header__line .menu {
+        display: none;
+    }
+.mobile-menu {
+    padding: 0 15px;
 	display: none;
 	position: absolute;
 	top: 100%;
@@ -172,6 +176,33 @@
 	overflow: auto;
 	background-color: #f7f7f7;
 	padding-bottom: 100px;
+}
+.menu {
+    max-width: 100%;
+    padding: 0;
+    display: block;
+}
+.mobile-menu .list-social {
+    display: flex;
+    position: relative;
+    top: 0;
+    margin: 0;
+    left: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.mobile-menu .list-phones {
+    margin: 0;
+    margin-top: 15px;
+}
+.mobile-menu  .list-social a {
+    margin-right: 15px;
+}
+.mobile-menu .btn-main_page {
+    display: none;
+}
+.mobile-menu__bottom {
+    padding: 0 15px;
 }
 .header__line {
 	position: static;
@@ -611,6 +642,9 @@ body {
     .big-news__content {
         max-width: 100%;
     }
+    .mobile-menu .btn-main_page {
+    display: inline-flex;
+}
 }
 @media only screen and (max-width : 370px) {
 .item-map__prices {
@@ -647,6 +681,9 @@ body {
 .menu {
 	display: flex !important;
 	height: initial !important;
+}
+.mobile-menu {
+    display: none !important;
 }
 }
 

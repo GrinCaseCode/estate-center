@@ -25,16 +25,16 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//кнопка sandwich
 	$(".btn_nav").click(function() {
 		$(".sandwich").toggleClass("active");
-		if ($(".menu").is(":hidden")) {
-			$(".menu").slideDown(200);
+		if ($(".mobile-menu").is(":hidden")) {
+			$(".mobile-menu").slideDown(200);
 		} else {
-			$(".menu").slideUp(200);
+			$(".mobile-menu").slideUp(200);
 		}
 		
 	});
 
-	$(".menu a").click(function() {
-		$(".menu").slideUp(200);
+	$(".mobile-menu a").click(function() {
+		$(".mobile-menu").slideUp(200);
 		$(".sandwich").removeClass("active");
 	});
 
@@ -74,7 +74,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 	/*высота блока по экрану*/
 	function heightDetect() {
-		$('.menu').css("height", $(window).height() -$(".header").height() + 60);
+		$('.mobile-menu').css("height", $(window).height() -$(".header").height() + 60);
 	};
 	heightDetect();
 	$(window).resize(function() {
