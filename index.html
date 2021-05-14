@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css" /> 
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<header class="header default">
+			<div class="container"> 
+				<div class="header__line">
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="alt">
+					</a>
+					<ul class="menu">
+						<li class="active"><a href="#">Каталог домов</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Ипотека</a></li>
+						<li><a href="#">Команда</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div class="header__right">
+						<ul class="list-phones">
+							<li><a href="tel:+88005053825">8 800 505-38-25</a></li>
+							<li><a href="tel:+79781108638">+7 978 110-86-38</a></li>
+						</ul>
+						<a href="#callback" class="btn-main btn-main_page fancybox">Заказать звонок</a>
+						<a href="tel:+79781108638" class="btn-phone"><i class="fas fa-phone"></i></a>
+						<span class="btn_nav">
+							<span class='sandwich'>
+								<span class='sw-topper'></span>
+								<span class='sw-bottom'></span>
+								<span class='sw-footer'></span>
+							</span>
+						</span>
+					</div>
+					<ul class="list-social">
+						<li><a href="#" class="list-social__like"><i class="fas fa-heart"></i></a></li>
+						<li><a href="#" class="list-social__whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+						<li><a href="#" class="list-social__viber"><i class="fab fa-viber"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="billbord">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="title-big">Выберите <br>дом мечты сегодня</div>
+						<div class="billbord__items">
+							<div class="row">
+								<div class="col-6">
+									<div class="item-billbord">
+										<div class="item-billbord__icon">
+											<img src="img/ic_billbord1.png" alt="alt">
+										</div>
+										<p>Только юридически чистые объекты</p>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="item-billbord">
+										<div class="item-billbord__icon">
+											<img src="img/ic_billbord2.png" alt="alt">
+										</div>
+										<p>Реальные фотографии объектов</p>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="item-billbord">
+										<div class="item-billbord__icon">
+											<img src="img/ic_billbord3.png" alt="alt">
+										</div>
+										<p>Привлекательные рыночные цены</p>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="item-billbord">
+										<div class="item-billbord__icon">
+											<img src="img/ic_billbord4.png" alt="alt">
+										</div>
+										<p>Полное сопровождение сделки</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="block-calculator">
+					<div class="block-calculator__line">
+						<div class="item-calculator">
+							<div class="item-calculator__title">Стоимость объекта, Р</div>
+							<div class="range-catalog range-catalog_price">
+								<div class="range-controls">
+									<input type="text" maxlength="4" value="2 189 000" class="control-input control-input__from" />
+									<input type="text" maxlength="4" value="8 366 000" class="control-input control-input__to" />
+								</div>
+								<input type="text" class="range-catalog__input" name="my_range" value="" />
+							</div>
+						</div>
+						<div class="item-calculator">
+							<div class="item-calculator__title">Площадь объекта, м<sup>2</sup></div>
+							<div class="range-catalog range-catalog_area">
+								<div class="range-controls">
+									<input type="text" maxlength="4" value="100" class="control-input control-input__from" />
+									<input type="text" maxlength="4" value="458" class="control-input control-input__to" />
+								</div>
+								<input type="text" class="range-catalog__input" name="my_range" value="" />
+							</div>
+						</div>
+						<div class="item-calculator">
+							<button class="btn-main">Показать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="catalog">
+			<div class="container">
+				<div class="block-calculator block-calculator_catalog">
+					<div class="block-calculator__line">
+						<div class="item-calculator">
+							<div class="item-calculator__title">Стоимость объекта, Р</div>
+							<div class="range-catalog range-catalog_price">
+								<div class="range-controls">
+									<input type="text" maxlength="4" value="2 189 000" class="control-input control-input__from" />
+									<input type="text" maxlength="4" value="8 366 000" class="control-input control-input__to" />
+								</div>
+								<input type="text" class="range-catalog__input" name="my_range" value="" />
+							</div>
+						</div>
+						<div class="item-calculator">
+							<div class="item-calculator__title">Площадь объекта, м<sup>2</sup></div>
+							<div class="range-catalog range-catalog_area">
+								<div class="range-controls">
+									<input type="text" maxlength="4" value="100" class="control-input control-input__from" />
+									<input type="text" maxlength="4" value="458" class="control-input control-input__to" />
+								</div>
+								<input type="text" class="range-catalog__input" name="my_range" value="" />
+							</div>
+						</div>
+						<div class="item-calculator">
+							<div class="item-calculator__title">Площадь участка, м<sup>2</sup></div>
+							<div class="range-catalog range-catalog_area">
+								<div class="range-controls">
+									<input type="text" maxlength="4" value="100" class="control-input control-input__from" />
+									<input type="text" maxlength="4" value="458" class="control-input control-input__to" />
+								</div>
+								<input type="text" class="range-catalog__input" name="my_range" value="" />
+							</div>
+						</div>
+						<div class="item-calculator">
+							<div class="item-calculator__title">Этажей в доме:</div>
+							<select>
+								<option value="1">2</option>
+								<option value="1">3</option>
+								<option value="1">4</option>
+								<option value="1">5</option>
+							</select>
+						</div>
+						<div class="item-calculator">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" checked="checked" />
+									<span>От застройщика</span>
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" />
+									<span>Только с планировкой</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="block-calculator__bottom">
+						<button class="btn-icon">Еще параметры <i class="far fa-plus-circle"></i></button>
+						<div class="block-calculator__right">
+							<button class="btn-icon">Очистить <i class="far fa-trash"></i></button>
+							<button class="btn-main">Показать 34 предложения</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="catalog-block">
+							<div class="select-simple">
+								<p>Сортировать: </p>
+								<select>
+									<option value="1">по умолчанию</option>
+									<option value="1">по цене</option>
+									<option value="1">по дате</option>
+									<option value="1">по популярности</option>
+								</select>
+							</div>
+							<ul class="slider-catalog">
+								<li>
+									<div class="item-catalog">
+										<div class="item-catalog__image">
+											<img src="img/catalog1.jpg" alt="alt">
+											<a href="#" class="btn-like"><i class="far fa-heart"></i></a>
+											<ul class="icons-catalog">
+												<li><div class="icons-catalog__item"><img src="img/ic_item1.png" alt="alt"></div></li>
+												<li><div class="icons-catalog__item"><img src="img/ic_item2.png" alt="alt"></div></li>
+											</ul>
+										</div>
+										<div class="item-catalog__content">
+											<div class="item-catalog__name">Двухэтажный дом</div>
+											<div class="item-catalog__prices">
+												<div class="item-catalog__price">3 000 000 <span>₽</span></div>
+												<div class="item-catalog__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></div>
+											</div>
+											<div class="features-wrap">
+												<div class="item-feature"><img src="img/ic_feature1.png" alt="alt">2</div>
+												<div class="item-feature"><img src="img/ic_feature2.png" alt="alt">10 сот</div>
+												<div class="item-feature"><img src="img/ic_feature3.png" alt="alt">96 м<sup>2</sup></div>
+											</div>
+											<div class="item-catalog__descr">Севастопольский р-н, Кача, <br>21 км. до центра </div>
+											<a href="#" class="btn-simple">Показать объект</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item-catalog">
+										<div class="item-catalog__image">
+											<img src="img/catalog1.jpg" alt="alt">
+											<a href="#" class="btn-like"><i class="far fa-heart"></i></a>
+											<ul class="icons-catalog">
+												<li><div class="icons-catalog__item"><img src="img/ic_item1.png" alt="alt"></div></li>
+												<li><div class="icons-catalog__item"><img src="img/ic_item2.png" alt="alt"></div></li>
+											</ul>
+										</div>
+										<div class="item-catalog__content">
+											<div class="item-catalog__name">Двухэтажный дом</div>
+											<div class="item-catalog__prices">
+												<div class="item-catalog__price">3 000 000 <span>₽</span></div>
+												<div class="item-catalog__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></div>
+											</div>
+											<div class="features-wrap">
+												<div class="item-feature"><img src="img/ic_feature1.png" alt="alt">2</div>
+												<div class="item-feature"><img src="img/ic_feature2.png" alt="alt">10 сот</div>
+												<div class="item-feature"><img src="img/ic_feature3.png" alt="alt">96 м<sup>2</sup></div>
+											</div>
+											<div class="item-catalog__descr">Севастопольский р-н, Кача, <br>21 км. до центра </div>
+											<a href="#" class="btn-simple">Показать объект</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item-catalog">
+										<div class="item-catalog__image">
+											<img src="img/catalog1.jpg" alt="alt">
+											<a href="#" class="btn-like"><i class="far fa-heart"></i></a>
+											<ul class="icons-catalog">
+												<li><div class="icons-catalog__item"><img src="img/ic_item1.png" alt="alt"></div></li>
+												<li><div class="icons-catalog__item"><img src="img/ic_item2.png" alt="alt"></div></li>
+											</ul>
+										</div>
+										<div class="item-catalog__content">
+											<div class="item-catalog__name">Двухэтажный дом</div>
+											<div class="item-catalog__prices">
+												<div class="item-catalog__price">3 000 000 <span>₽</span></div>
+												<div class="item-catalog__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></div>
+											</div>
+											<div class="features-wrap">
+												<div class="item-feature"><img src="img/ic_feature1.png" alt="alt">2</div>
+												<div class="item-feature"><img src="img/ic_feature2.png" alt="alt">10 сот</div>
+												<div class="item-feature"><img src="img/ic_feature3.png" alt="alt">96 м<sup>2</sup></div>
+											</div>
+											<div class="item-catalog__descr">Севастопольский р-н, Кача, <br>21 км. до центра </div>
+											<a href="#" class="btn-simple">Показать объект</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item-catalog">
+										<div class="item-catalog__image">
+											<img src="img/catalog1.jpg" alt="alt">
+											<a href="#" class="btn-like"><i class="far fa-heart"></i></a>
+											<ul class="icons-catalog">
+												<li><div class="icons-catalog__item"><img src="img/ic_item1.png" alt="alt"></div></li>
+												<li><div class="icons-catalog__item"><img src="img/ic_item2.png" alt="alt"></div></li>
+											</ul>
+										</div>
+										<div class="item-catalog__content">
+											<div class="item-catalog__name">Двухэтажный дом</div>
+											<div class="item-catalog__prices">
+												<div class="item-catalog__price">3 000 000 <span>₽</span></div>
+												<div class="item-catalog__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></div>
+											</div>
+											<div class="features-wrap">
+												<div class="item-feature"><img src="img/ic_feature1.png" alt="alt">2</div>
+												<div class="item-feature"><img src="img/ic_feature2.png" alt="alt">10 сот</div>
+												<div class="item-feature"><img src="img/ic_feature3.png" alt="alt">96 м<sup>2</sup></div>
+											</div>
+											<div class="item-catalog__descr">Севастопольский р-н, Кача, <br>21 км. до центра </div>
+											<a href="#" class="btn-simple">Показать объект</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item-catalog">
+										<div class="item-catalog__image">
+											<img src="img/catalog1.jpg" alt="alt">
+											<a href="#" class="btn-like"><i class="far fa-heart"></i></a>
+											<ul class="icons-catalog">
+												<li><div class="icons-catalog__item"><img src="img/ic_item1.png" alt="alt"></div></li>
+												<li><div class="icons-catalog__item"><img src="img/ic_item2.png" alt="alt"></div></li>
+											</ul>
+										</div>
+										<div class="item-catalog__content">
+											<div class="item-catalog__name">Двухэтажный дом</div>
+											<div class="item-catalog__prices">
+												<div class="item-catalog__price">3 000 000 <span>₽</span></div>
+												<div class="item-catalog__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></div>
+											</div>
+											<div class="features-wrap">
+												<div class="item-feature"><img src="img/ic_feature1.png" alt="alt">2</div>
+												<div class="item-feature"><img src="img/ic_feature2.png" alt="alt">10 сот</div>
+												<div class="item-feature"><img src="img/ic_feature3.png" alt="alt">96 м<sup>2</sup></div>
+											</div>
+											<div class="item-catalog__descr">Севастопольский р-н, Кача, <br>21 км. до центра </div>
+											<a href="#" class="btn-simple">Показать объект</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item-catalog">
+										<div class="item-catalog__image">
+											<img src="img/catalog1.jpg" alt="alt">
+											<a href="#" class="btn-like"><i class="far fa-heart"></i></a>
+											<ul class="icons-catalog">
+												<li><div class="icons-catalog__item"><img src="img/ic_item1.png" alt="alt"></div></li>
+												<li><div class="icons-catalog__item"><img src="img/ic_item2.png" alt="alt"></div></li>
+											</ul>
+										</div>
+										<div class="item-catalog__content">
+											<div class="item-catalog__name">Двухэтажный дом</div>
+											<div class="item-catalog__prices">
+												<div class="item-catalog__price">3 000 000 <span>₽</span></div>
+												<div class="item-catalog__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></div>
+											</div>
+											<div class="features-wrap">
+												<div class="item-feature"><img src="img/ic_feature1.png" alt="alt">2</div>
+												<div class="item-feature"><img src="img/ic_feature2.png" alt="alt">10 сот</div>
+												<div class="item-feature"><img src="img/ic_feature3.png" alt="alt">96 м<sup>2</sup></div>
+											</div>
+											<div class="item-catalog__descr">Севастопольский р-н, Кача, <br>21 км. до центра </div>
+											<a href="#" class="btn-simple">Показать объект</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item-catalog">
+										<div class="item-catalog__image">
+											<img src="img/catalog1.jpg" alt="alt">
+											<a href="#" class="btn-like"><i class="far fa-heart"></i></a>
+											<ul class="icons-catalog">
+												<li><div class="icons-catalog__item"><img src="img/ic_item1.png" alt="alt"></div></li>
+												<li><div class="icons-catalog__item"><img src="img/ic_item2.png" alt="alt"></div></li>
+											</ul>
+										</div>
+										<div class="item-catalog__content">
+											<div class="item-catalog__name">Двухэтажный дом</div>
+											<div class="item-catalog__prices">
+												<div class="item-catalog__price">3 000 000 <span>₽</span></div>
+												<div class="item-catalog__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></div>
+											</div>
+											<div class="features-wrap">
+												<div class="item-feature"><img src="img/ic_feature1.png" alt="alt">2</div>
+												<div class="item-feature"><img src="img/ic_feature2.png" alt="alt">10 сот</div>
+												<div class="item-feature"><img src="img/ic_feature3.png" alt="alt">96 м<sup>2</sup></div>
+											</div>
+											<div class="item-catalog__descr">Севастопольский р-н, Кача, <br>21 км. до центра </div>
+											<a href="#" class="btn-simple">Показать объект</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div id="map-catalog"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="result-bottom">
+			<div class="container">
+				<div class="result-form">
+					<div class="title-middle">По вашему запросу найдено еще <strong>24 объекта</strong></div>
+					<div class="descr-title">Они отобразятся сразу после ввода Вашего номера телефона</div>
+					<form>
+						<div class="phone-form">
+							<div class="item-form">
+								<input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+							</div>
+							<button class="btn-main" type="submit">Разблокировать лоты</button>
+						</div>
+						<div class="descr-form">Доступ откроется в течение 3 секунд</div>
+					</form>
+					<div class="result-form__image">
+						<img src="img/results.png" alt="alt">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="advantages">
+			<div class="container">
+				<div class="title-section">Центр недвижимости которому стоит доверять</div>
+				<div class="row row_advantages">
+					<div class="col-lg-4 col-md-6">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd1.png" alt="alt">
+							</div>
+							<div class="item-advantage__title">Оперативность сделок</div>
+							<p>Экономим ваше время: берем всю рутину на себя, вам не нужно тратить время на бумажную волокиту</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd2.png" alt="alt">
+							</div>
+							<div class="item-advantage__title">Безопасность сделок</div>
+							<p>Каждый объект недвижимости проверен на юридическую чистоту</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd3.png" alt="alt">
+							</div>
+							<div class="item-advantage__title">Привлекательные рыночные цены</div>
+							<p>Каждый объект недвижимости проверен на юридическую чистоту</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd4.png" alt="alt">
+							</div>
+							<div class="item-advantage__title">Комисия 0%</div>
+							<p>Наши услуги оплатил продавец, для вас они бесплатны</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd5.png" alt="alt">
+							</div>
+							<div class="item-advantage__title">Индивидуальный подход</div>
+							<p>Наша компания имеет работы на рынке недвижимости более 10 лет. Ищем индивидуальный подход к каждому клиенту</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd6.png" alt="alt">
+							</div>
+							<div class="item-advantage__title">Опыт в сделках с недвижимостью </div>
+							<p>Наша компания имеет работы на рынке недвижимости более 10 лет. Ищем индивидуальный подход к каждому клиенту</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="presentation">
+			<div class="container">
+				<div class="presentation-block">
+					<div class="presentation-block__content">
+						<div class="title-section">Скачай каталог наших объектов</div>
+						<div class="descr-section">В презентации вас ждет:</div>
+						<ul class="list-page">
+							<li>Новые объекты</li>
+							<li>Советы по оформлению сделки</li>
+							<li>Актуальные цены</li>
+							
+							<li>Как выгодно купить</li>
+						</ul>
+						<a href="#" class="btn-main btn-main_download"><i class="far fa-arrow-to-bottom"></i> Скачать презентацию</a>
+						<div class="presentation-block__desc">Время скачивания 3 секунды, PDF</div>
+					</div>
+					<div class="presentation-block__image">
+						<img src="img/mokup.png" alt="alt">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="steps">
+			<div class="container">
+				<div class="steps-block">
+					<div class="row row_steps">
+						<div class="col-lg-4 col-md-6">
+							<div class="title-section">Как происходит покупка дома</div>
+							<div class="descr-middle">Посмотрите подробный план действия и узнайте за что вы платите деньги</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-step">
+								<div class="item-step__number">01</div>
+								<div class="item-step__title">Заявка</div>
+								<p>Вы оставляете заявку на экскурсию по дому в нашем коттеджном поселке</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-step">
+								<div class="item-step__number">02</div>
+								<div class="item-step__title">Консультация</div>
+								<p>Консультация по объекту, предоставление дополнительной информации</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-step">
+								<div class="item-step__number">03</div>
+								<div class="item-step__title">Показ объекта</div>
+								<p>Мы созвонимся с вами и оговорим удобное для вас время </p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-step">
+								<div class="item-step__number">04</div>
+								<div class="item-step__title">Сопровождение сделки</div>
+								<p>Если вам все подходит, мы передаем вас нашему менеджеру, для заключения сделки</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-step">
+								<div class="item-step__number">05</div>
+								<div class="item-step__title">Задаток</div>
+								<p>В зависимости от формы оплаты, собственность оформляется до 20 дней</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-step">
+								<div class="item-step__number">06</div>
+								<div class="item-step__title">Нотариальное оформление</div>
+								<p>В зависимости от формы оплаты, собственность оформляется до 20 дней</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-step">
+								<div class="item-step__number">07</div>
+								<div class="item-step__title">Расчет по объекту</div>
+								<p>В зависимости от формы оплаты, собственность оформляется до 20 дней</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="item-step">
+								<div class="item-step__number">08</div>
+								<div class="item-step__title">Получение документов</div>
+								<p>В зависимости от формы оплаты, собственность оформляется до 20 дней</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="consult">
+			<div class="container">
+				<div class="consult-block">
+					<div class="title-section">Проконсультируем совершенно бесплатно</div>
+					<div class="descr-section">Оставьте заявку и мы перезвоним вам в течение 15 минут</div>
+					<form>
+						<div class="row align-items-center">
+							<div class="col-md-4">
+								<div class="item-form">
+									<input type="text" placeholder="Ваше имя" required="required">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="item-form">
+									<input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<button class="btn-main" type="submit">Получить консультацию</button>
+							</div>
+						</div>
+						<div class="checkbox-right">
+							<div class="checkbox checkbox_simple">
+								<label>
+									<input type="checkbox" required="required" checked="checked" />
+									<span>Согласие на обработку персональных данных</span>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="team">
+			<div class="container">
+				<div class="team-block">
+					<div class="title-section">Наша команда</div>
+					<div class="team-block__wrap">
+						<div class="team-block__image">
+							<img src="img/team.jpg" alt="alt">
+						</div>
+						<div class="team-block__text">
+							<p>Также как существующая теория требует анализа новых принципов формирования материально-технической и кадровой базы. Но сплочённость команды профессионалов играет определяющее значение для поэтапного и последовательного развития общества. С другой стороны, высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса существующих финансовых и административных условий.</p>
+							<p>Как принято считать, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть ассоциативно распределены по отраслям. Господа, курс на социально-ориентированный национальный проект требует определения и уточнения прогресса профессионального сообщества. Для современного мира внедрение современных методик предопределяет высокую востребованность новых принципов формирования материально-технической и кадровой базы.</p>
+						</div>
+						<div class="team-block__numbers">
+							<div class="item-number">
+								<div class="item-number__head">212 <span>лет</span></div>
+								<p>Суммарный опыт работ наших сотрудников на рынке недвижимости</p>
+							</div>
+							<div class="item-number">
+								<div class="item-number__head">18 000  <span>кв. м</span></div>
+								<p>Недвижимости в активной продаже</p>
+							</div>
+							<div class="item-number">
+								<div class="item-number__head">+1000</div>
+								<p>Успешных сделок</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="news">
+			<div class="container">
+				<div class="title-section">Блог о комфортной жизни</div>
+				<div class="big-news">
+					<div class="big-news__image">
+						<img src="img/big_news1.jpg" alt="alt">
+					</div>
+					<div class="big-news__content">
+						<div class="date-news">04 мая 2021</div>
+						<a href="#" class="title-news">Cпeциaлиcт oбъяcнил пpeимyщecтвa инвecтиций в дpyгиe peгиoны</a>
+						<div class="text-news">
+							<p>Oн пoдчepкнyл, чтo ceгoдня pынoк зaгopoднoй нeдвижимocти тaк жe пepeживaeт aктивный pocт, пpичeм yвeличивaяcь в дoлe pынкa. Ecли гoвopить o зaгopoдныx дoмax, тo cтoит имeть ввидy фyндaмeнтaльнyю ...</p>
+						</div>
+						<a href="#" class="btn-simple btn-simple_news">Подробнее</a>
+					</div>
+				</div>
+				<div class="row row_news">
+					<div class="col-lg-6">
+						<div class="item-news">
+							<div class="item-news__image">
+								<img src="img/news1.jpg" alt="alt">
+							</div>
+							<div class="item-news__content">
+								<div class="date-news">04 мая 2021</div>
+								<a href="#" class="title-news">Экcпepт paccкaзaл, чeм пpивлeкaтeльны инвecтиции в зaгopoднyю нeдвижимocть</a>
+								<div class="text-news">
+									<p>Инвecтиpoвaниe в зeмeльныe yчacтки c xopoшeй лoкaциeй мoгyт пpинecти peaльнyю выгoдy, ocoбeннo ecли влoжить дeньги нa cтapтe пpoeктa и выйти из нeгo нe paнee чeм чepeз 2 гoдa.</p>
+								</div>
+								<a href="#" class="btn-simple btn-simple_news">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="item-news">
+							<div class="item-news__image">
+								<img src="img/news1.jpg" alt="alt">
+							</div>
+							<div class="item-news__content">
+								<div class="date-news">04 мая 2021</div>
+								<a href="#" class="title-news">Экcпepт paccкaзaл, чeм пpивлeкaтeльны инвecтиции в зaгopoднyю нeдвижимocть</a>
+								<div class="text-news">
+									<p>Инвecтиpoвaниe в зeмeльныe yчacтки c xopoшeй лoкaциeй мoгyт пpинecти peaльнyю выгoдy, ocoбeннo ecли влoжить дeньги нa cтapтe пpoeктa и выйти из нeгo нe paнee чeм чepeз 2 гoдa.</p>
+								</div>
+								<a href="#" class="btn-simple btn-simple_news">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="footer__logo">
+							<a href="#" class="logo">
+								<img src="img/logo2.png" alt="alt">
+							</a>
+							<div class="logo-descr">Продажа недвижимости в Севастополе</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="footer__title">Компания <i class="fal fa-plus"></i></div>
+						<div class="footer__content">
+							<ul class="list-footer">
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Каталог домов</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Ипотека</a></li>
+								<li><a href="#">Наша команда</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 footer__contacts">
+						<div class="footer__title">Контакты <i class="fal fa-plus"></i></div>
+						<div class="footer__content">
+							<ul class="list-phones">
+								<li><a href="tel:+88005053825">8 800 505-38-25</a></li>
+								<li><a href="tel:+79781108638">+7 978 110-86-38</a></li>
+							</ul>
+							<br>
+							<p><strong>Наш адрес:</strong></p>
+							<p>г. Севастополь ул. Вакуленчука, 18В</p>
+							<br>
+							<p><strong>Наш e-mail:</strong> <a href="mailto:office@rcrealty.ru">office@rcrealty.ru</a></p>
+							<br>
+							<p><strong>Режим работы:</strong></p>
+							<p>с 9:00 до 18:00</p>
+							<p>СБ-ВС - выходной</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="footer__title">Cоциальные сети <i class="fal fa-plus"></i></div>
+						<div class="footer__content">
+							<div class="footer__right">
+								<p>Подпишитесь на наши социальные сети:</p>
+								<ul class="social-list">
+									<li><a href="#"><i class="fab fa-vk"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+									<li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+								</ul>
+								<a href="#callback" class="btn-main fancybox">Получить консультацию</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-2 col-sm-6">
+							<a href="#">Политика конфиденциальности</a>
+						</div>
+						<div class="col-lg-3 col-sm-6 col_copyright">
+							<p>г. Севастополь © Copyright 2021 г.</p>
+						</div>
+						<div class="col-lg-3 col-sm-6 col_pl">
+							<div class="create">Сделано в <img src="img/copy.svg" alt="alt"></div>
+						</div>
+						<div class="col-lg-4 col-sm-6 align_right">
+							<a href="#" class="btn_top default"><i class="fa fa-arrow-up"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script>
+	$(document).ready(function() {
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map('map-catalog', {
+				center: [44.743083, 33.551196],
+				zoom: 14
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+			myPlacemark = new ymaps.Placemark([44.743083, 33.551196], {
+				balloonContent: '<div class="wrap-map"><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a></div>',
+				 iconContent: '14',
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [39, 39],
+				iconContentOffset: [12, 12],
+				 iconImageOffset: [-5, -38],
+				balloonOffset: [ 12, -42 ]
+			});
+			myPlacemark2 = new ymaps.Placemark([44.753252, 33.561156], {
+				balloonContent: '<div class="wrap-map"><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a></div>',
+				 iconContent: '21',
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconContentOffset: [12, 12],
+				iconImageOffset: [-5, -38],
+				iconImageSize: [39, 39],
+				balloonOffset: [ 12, -42 ]
+			});
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark);
+			myMap.geoObjects.add(myPlacemark2);
+		}
+	});
+</script> 
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
