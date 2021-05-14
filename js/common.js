@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
 
+
+
+   
 //прилипающие меню
 var $menu = $(".header");
 $(window).scroll(function(){

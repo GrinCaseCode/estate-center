@@ -543,17 +543,23 @@ select {
 .item-catalog {
 	max-width: 273px;
 	margin-bottom: 30px;
+	min-height: 411px;
 	background-color: #ffffff;
 	box-shadow: 0px 12px 13px 0px rgba(212,210,210,0.5);
 	border-radius: 10px;
+	    display: flex;
+    flex-direction: column;
 	transition: all 0.3s;
 }
 .item-catalog:hover {
 		box-shadow: 0px 12px 13px 0px rgba(212,210,210,0.8);
 }
 .item-catalog__content {
-	padding: 15px;
-	padding-bottom: 22px;
+    padding: 15px;
+    padding-bottom: 22px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 .item-catalog__name {
 	font-weight: 900;
@@ -638,6 +644,7 @@ select {
 	background-color: #d8d9db;
 }
 .item-catalog .btn-simple {
+	margin-top: auto;
 	width: 100%;
 }
 .btn-like {
@@ -1539,4 +1546,189 @@ letter-spacing: 0.025em;
 }
 .btn-phone {
 	display: none;
+}
+.block-calculator_catalog .title-section {
+	padding-bottom: 10px;
+	text-align: left;
+}
+.catalog .container > .catalog-block {
+	margin: 0;
+}
+.row_catalog {
+	margin-top: 20px;
+}
+.row_catalog .item-catalog {
+	max-width: 100%;
+}
+.btn-simple_more {
+	width: 100%;
+	color: #111c26;
+	margin-top: 20px;
+}
+.header_page {
+	background-color: #f7f7f7;
+	position: relative;
+}
+.header_page .header__line .list-social {
+	position: relative;
+	top: 0;
+	margin: 0;
+	margin-left: 12px;
+	display: flex;
+}
+.header_page .header__line .list-social li {
+	margin-right: 12px;
+}
+.header_page .header__line .list-social li a {
+	margin-bottom: 0;
+}
+.catalog_page {
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+.catalog_page .block-calculator_catalog {
+	padding-top: 20px;
+}
+.pager {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	    border-radius: 12px;
+	    background-color: #ecedee;
+}
+.page-numbers {
+	font-weight: 500;
+	padding: 9px 20px;
+	padding-top: 11px;
+	border-bottom: 2px transparent solid;
+	color: #111c26;
+}
+.page-numbers:hover {
+	color: #1b9958;
+}
+.page-numbers.current {
+	border-color: #1b9958;
+		color: #111c26 !important;
+}
+.page-numbers.next,
+.page-numbers.prev {
+	width: 30px;
+    height: 30px;
+    font-size: 12px;
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px 0px rgb(190 191 191 / 31%);
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #17af4f !important;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+	position: absolute;
+}
+.page-numbers.next:hover,
+.page-numbers.prev:hover {
+    box-shadow: 0px 4px 10px 0px rgb(190 191 191 / 61%);
+}
+.page-numbers.prev {
+	left: 10px;
+}
+.page-numbers.next {
+	right: 10px;
+}
+
+
+
+
+#main{
+   background-color: BurlyWood;
+   float: right;
+   position: absolute;
+   height:200px;
+   right: 0;
+   left:200px;
+   margin-top:10px;
+    
+}
+
+
+#dragbar{
+   height:100%;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 24;
+   width: 3px;
+   cursor: col-resize;
+}
+#ghostbar {
+    width:3px;
+    opacity:0.5;
+    position:absolute;
+    cursor: col-resize;
+    z-index:999
+}
+.dragbutton {
+	position: sticky;
+	display: block;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: col-resize;
+    top: 200px;
+    margin-top: 200px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    z-index: 10;
+}
+.catalog-wrap .catalog-block {
+	margin-right: 0;
+}
+.catalog-wrap__left {
+	width: 65%;
+
+	position: relative;
+}
+.catalog-wrap {
+clear: both;
+position: relative;
+}
+.catalog-wrap__left::before,
+.catalog-wrap__left::after,
+.catalog-wrap::after,
+.catalog-wrap::before {
+    content: " ";
+    display: table;
+}
+.catalog-wrap__right {
+	float: right;
+	position: absolute;
+	left: 65%;
+	top: 0;
+	height: 100%;
+	right: 0;
+}
+.catalog-wrap__right  #map-catalog {
+	min-width: 100%;
+	height: 100vh;
+	min-height: initial;
+	min-width: calc(100% + 30px);
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	background-color: transparent;
+}
+.wrapper {
+	overflow: initial;
 }

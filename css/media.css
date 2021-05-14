@@ -37,6 +37,11 @@
 .item-news .title-news {
     font-size: 22px;
     }
+
+    .header_page .header__line .menu {
+        padding-right: 0;
+        font-size: 14px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -155,6 +160,32 @@
     .catalog {
     	padding: 70px 0;
     }
+    .row_catalog {
+        margin: 0 5px;
+        margin-top: 20px;
+    }
+    .row_catalog > div {
+        padding: 0 5px;
+    }
+    .catalog .container > .catalog-block {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    .row_catalog .item-catalog {
+        margin-bottom: 22px;
+    }
+    .header_page .header__line .list-social {
+        margin-left: 5px;
+    }
+    .header_page .header__line .list-social li {
+    margin-right: 4px;
+}
+.header_page .header__line .menu {
+    font-size: 13px;
+}
+.catalog_page {
+    padding-top: 20px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -333,6 +364,26 @@ flex-wrap: wrap;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+.wrapper_page {
+    padding-top: 73px;
+}
+.row_catalog > div {
+    padding: 0 10px;
+}
+.row_catalog {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.catalog .container > .catalog-block {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.block-calculator_catalog .title-section {
+    padding-bottom: 0;
+}
+.header_page .header__line .list-social {
+    display: none;
+}
 }
 
 /* Small Devices, Tablets */
@@ -503,6 +554,20 @@ flex-wrap: wrap;
 	max-width: 200px;
 	margin: 0 auto;
 }
+.catalog_page {
+    padding-top: 20px;
+}
+.catalog .container > .catalog-block {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.page-numbers {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.item-catalog {
+    min-height: initial;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -653,6 +718,14 @@ body {
 }
 .consult-block .descr-section {
     padding-bottom: 20px;
+}
+.catalog .container > .catalog-block {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.page-numbers {
+    padding-left: 7px;
+    padding-right: 7px;
 }
 }
 @media only screen and (max-width : 370px) {
