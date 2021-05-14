@@ -651,6 +651,9 @@ body {
 .slider-catalog .slick-next {
     right: -15px;
 }
+.consult-block .descr-section {
+    padding-bottom: 20px;
+}
 }
 @media only screen and (max-width : 370px) {
 .item-map__prices {
