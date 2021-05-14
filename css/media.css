@@ -645,6 +645,12 @@ body {
     .mobile-menu .btn-main_page {
     display: inline-flex;
 }
+.slider-catalog .slick-prev {
+    left: -15px;
+}
+.slider-catalog .slick-next {
+    right: -15px;
+}
 }
 @media only screen and (max-width : 370px) {
 .item-map__prices {
