@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.1" />
-	<link rel="stylesheet" href="css/media.css?ver=1.1" /> 
+	<link rel="stylesheet" href="css/main.css?ver=1.2" />
+	<link rel="stylesheet" href="css/media.css?ver=1.2" /> 
 </head>
 <body>
 
@@ -61,6 +61,26 @@
 						<li><a href="#" class="list-social__viber"><i class="fab fa-viber"></i></a></li>
 					</ul>
 				</div>
+			</div>
+			<div class="mobile-menu">
+				<ul class="menu">
+					<li class="active"><a href="#">Каталог домов</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Ипотека</a></li>
+					<li><a href="#">Команда</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="list-phones">
+					<li><a href="tel:+88005053825">8 800 505-38-25</a></li>
+					<li><a href="tel:+79781108638">+7 978 110-86-38</a></li>
+				</ul>
+				<ul class="list-social">
+					<li><a href="#" class="list-social__like"><i class="fas fa-heart"></i></a></li>
+					<li><a href="#" class="list-social__whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+					<li><a href="#" class="list-social__viber"><i class="fab fa-viber"></i></a></li>
+				</ul>
+				<a href="#callback" class="btn-main btn-main_page fancybox">Заказать звонок</a>
 			</div>
 		</header>
 
@@ -794,7 +814,7 @@
 <script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.1"></script>
+<script src="js/common.js?ver=1.2"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script>
 	$(document).ready(function() {
@@ -808,19 +828,19 @@
 			}),
 			myPlacemark = new ymaps.Placemark([44.743083, 33.551196], {
 				balloonContent: '<div class="wrap-map"><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a></div>',
-				 iconContent: '14',
+				iconContent: '14',
 			}, {
 				iconLayout: 'default#imageWithContent',
 				iconImageHref: 'img/pin.png',
 				hideIconOnBalloonOpen: false,
 				iconImageSize: [39, 39],
 				iconContentOffset: [12, 12],
-				 iconImageOffset: [-5, -38],
+				iconImageOffset: [-5, -38],
 				balloonOffset: [ 12, -42 ]
 			});
 			myPlacemark2 = new ymaps.Placemark([44.753252, 33.561156], {
 				balloonContent: '<div class="wrap-map"><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a><a href="#" class="item-map"><span class="item-map__image"><img src="img/item_map1.jpg" alt="alt"></span><span class="item-map__name">Двухэтажный дом</span><span class="item-map__prices"><span class="item-map__price">3 000 000 <span>₽</span></span><span class="item-map__oldprice">34 000 <span>₽</span>/ м<sup>2</sup></span></span><span class="item-map__descr">Севастопольский р-н, Кача</span></a></div>',
-				 iconContent: '21',
+				iconContent: '21',
 			}, {
 				iconLayout: 'default#imageWithContent',
 				iconImageHref: 'img/pin.png',
