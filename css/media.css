@@ -608,6 +608,9 @@ body {
 .billbord .block-calculator { 
     margin-top: 35px;
     }
+    .big-news__content {
+        max-width: 100%;
+    }
 }
 @media only screen and (max-width : 370px) {
 .item-map__prices {
