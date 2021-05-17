@@ -1669,6 +1669,7 @@ letter-spacing: 0.025em;
 #ghostbar {
     width:3px;
     opacity:0.5;
+    background-color: #000;
     position:absolute;
     cursor: col-resize;
     z-index:999
@@ -1697,7 +1698,8 @@ letter-spacing: 0.025em;
 }
 .catalog-wrap__left {
 	width: 65%;
-
+	min-width: 310px;
+	max-width: 100%;
 	position: relative;
 }
 .catalog-wrap {
@@ -1732,3 +1734,4 @@ position: relative;
 .wrapper {
 	overflow: initial;
 }
+

@@ -1,4 +1,4 @@
-/*==========  Desktop First Method  ==========*/
+
 @media only screen and (max-width : 1390px) {
 	.menu {
 		padding: 0 20px;
@@ -384,6 +384,23 @@ flex-wrap: wrap;
 .header_page .header__line .list-social {
     display: none;
 }
+.catalog-wrap__left {
+    width: 100% !important;
+}
+#dragbar {
+    display: none;
+}
+.catalog-wrap__right {
+float: none;
+left: 0 !important;
+width: 100% !important;
+position: relative;
+height: initial;
+}
+.catalog-wrap__right #map-catalog {
+    height: 400px;
+    min-width: initial;
+}
 }
 
 /* Small Devices, Tablets */
@@ -727,6 +744,9 @@ body {
     padding-left: 7px;
     padding-right: 7px;
 }
+.catalog-wrap__right #map-catalog {
+    height: 345px;
+    }
 }
 @media only screen and (max-width : 370px) {
 .item-map__prices {
