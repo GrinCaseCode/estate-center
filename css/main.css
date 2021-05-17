@@ -1705,6 +1705,7 @@ letter-spacing: 0.025em;
 .catalog-wrap {
 clear: both;
 position: relative;
+overflow: hidden;
 }
 .catalog-wrap__left::before,
 .catalog-wrap__left::after,
@@ -1734,4 +1735,5 @@ position: relative;
 .wrapper {
 	overflow: initial;
 }
+
 
