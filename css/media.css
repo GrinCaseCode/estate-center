@@ -45,6 +45,11 @@
     .card-price {
     font-size: 26px;
 }
+.contacts .block-form {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 295px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -220,6 +225,20 @@
     }
     .phone-block__number::before {
         width: 42px;
+    }
+    .contacts .block-form {
+        width: 400px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 0 auto;
+        margin-top: 30px;
+        float: none;
+    }
+    .partners-wrap__item {
+        padding: 0 10px;
+    }
+    .partners-wrap {
+        margin: 0 -10px;
     }
 }
 
@@ -448,6 +467,9 @@ height: initial;
 .wrapper {
     overflow: hidden;
 }
+.partners-wrap__item {
+    width: 25%;
+}
 }
 
 /* Small Devices, Tablets */
@@ -668,6 +690,31 @@ height: initial;
 .card-price {
     text-align: left;
 }
+.title-page {
+    font-size: 28px;
+    line-height: 36px;
+    }
+    .contacts .title-page {
+    padding-bottom: 20px;
+}
+#map-contact {
+    height: 350px;
+}
+.title-contact:first-of-type,
+.title-contact {
+    padding-top: 20px;
+}
+.contacts {
+    padding-bottom: 50px;
+}
+.item-team {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.partners {
+    padding-bottom: 50px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -875,6 +922,61 @@ body {
 }
 .card-consult {
     margin-top: 20px;
+}
+.title-contact {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.text-contact {
+    padding-bottom: 0;
+}
+ .block-form {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    max-width: 100%;
+}
+.block-form__title {
+    font-size: 18px;
+    padding-bottom: 9px;
+    }
+    .block-form__descr {
+        padding-bottom: 18px;
+    }
+    .block-form .checkbox {
+    margin-top: 15px;
+}
+.title-page {
+    font-size: 25px;
+    line-height: 32px;
+}
+.item-team  {
+    margin-bottom: 20px;
+}
+.team-page { 
+    padding-bottom: 30px;
+}
+.partners-wrap__item {
+    width: 33%; 
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+.partners-wrap {
+    margin: 0 -5px;
+}
+.partners {
+    padding-bottom: 40px;
+}
+.contacts {
+    padding-bottom: 35px;
+}
+.partners .title-page {
+    padding-bottom: 19px;
+}
+.item-partner {
+    height: 80px;
 }
 }
 @media only screen and (max-width : 370px) {
