@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'FF Nort';
+    src: local('FF Nort Regular'), local('FF-Nort-Regular'),
+        url('FFNort-Regular.woff2') format('woff2'),
+        url('FFNort-Regular.woff') format('woff'),
+        url('FFNort-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
