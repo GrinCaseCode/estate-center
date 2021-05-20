@@ -23,8 +23,8 @@ body input:required:valid,
 body textarea:required:valid { 
 
 }
-body { 
-	font-family: 'Lato';
+body {  
+	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 	overflow-x: hidden;
 	margin: 0;
@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: normal;
 }
 .wrapper {
-	overflow: hidden;
+
 }
 a {
 	text-decoration: none;
@@ -254,10 +254,10 @@ p {
 	background-color: #1b9958;
 }
 .irs--flat .irs-handle {
-	top: -2px;
-	width: 6px;
+	top: -5px;
+	width: 12px;
+	height: 12px;
 	cursor: pointer;
-	height: 6px;
 	background-color: #17af4f;
 	box-shadow: 0px 3px 5px 0px rgba(23,175,79,0.5);
 	border-radius: 50%;
@@ -660,6 +660,34 @@ select {
 	top: 5px;
 	right: 5px;
 	border-radius: 50%;
+	transition: all 0.3s;
+	z-index: 1;
+}
+.btn-like::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transform: scale(0);
+	background-color: #ffe876;
+	margin: auto;
+	transition: all 0.3s;
+	z-index: -1;
+	border-radius: 50%;
+}
+.btn-like:hover::after {
+	transform: scale(1);
+}
+.btn-like:active {
+	transform: scale(0.7);
+}
+.btn-like.active:active {
+	transform: scale(1.3);
 }
 .btn-like i {
 	position: relative;
@@ -1698,14 +1726,15 @@ select {
 }
 .catalog-wrap__left {
 	width: 65%;
-	min-width: 310px;
+	min-width: 23%;
 	max-width: 100%;
 	position: relative;
 }
 .catalog-wrap {
 	clear: both;
 	position: relative;
-	overflow: hidden;
+	background-color: #f7f7f7;
+	border-radius: 20px;
 }
 .catalog-wrap__left::before,
 .catalog-wrap__left::after,
@@ -1715,12 +1744,11 @@ select {
 	display: table;
 }
 .catalog-wrap__right {
-	float: right;
-	position: absolute;
 	left: 65%;
+	right: 0;
+	position: absolute;
 	top: 0;
 	height: 100%;
-	right: 0;
 }
 .catalog-wrap__right  #map-catalog {
 	min-width: 100%;
@@ -1735,7 +1763,7 @@ select {
 
 
 .breadcumbs {
-	padding: 20px 0;
+	padding: 16px 0;
 	font-size: 13px;
 	display: flex;
 	flex-wrap: wrap;
@@ -2013,7 +2041,7 @@ select {
 	bottom: 0;
 	right: 0px;
 	width: 49px;
-background: linear-gradient(270deg, #ECEDEE 52.08%, rgba(236, 237, 238, 0) 100%);	height: 100%;
+	background: linear-gradient(270deg, #ECEDEE 52.08%, rgba(236, 237, 238, 0) 100%);	height: 100%;
 	pointer-events: none;
 	z-index: 2;
 	transition: all 0.3s;
@@ -2150,11 +2178,11 @@ background: linear-gradient(270deg, #ECEDEE 52.08%, rgba(236, 237, 238, 0) 100%)
 }
 .title-page {
 	font-size: 36px;
-line-height: 43px;
-font-weight: 700;
+	line-height: 43px;
+	font-weight: 700;
 }
 #map-contact {
-	height: 439px;
+	height: 382px;
 	width: 100%;
 	border-radius: 20px;
 	overflow: hidden;
@@ -2170,9 +2198,9 @@ font-weight: 700;
 }
 .text-contact {
 	font-size: 14px;
-line-height: 23px;
-padding: 5px 25px;
-color: #000000;
+	line-height: 23px;
+	padding: 5px 25px;
+	color: #000000;
 	font-family: 'Lato';
 }
 .text-contact strong {
@@ -2180,8 +2208,8 @@ color: #000000;
 	display: block;
 }
 #map-contact .ymaps-2-1-78-balloon {
-box-shadow: 0px 0px 15px rgba(83, 83, 83, 0.25);
-border-radius: 8px;
+	box-shadow: 0px 0px 15px rgba(83, 83, 83, 0.25);
+	border-radius: 8px;
 }
 #map-contact .ymaps-2-1-78-balloon__layout {
 	border-radius: 8px;
@@ -2190,16 +2218,16 @@ border-radius: 8px;
 	box-shadow: none;
 }
 #map-contact .ymaps-2-1-78-balloon__tail:after {
-    bottom: 0px;
-    left: 0px;
+	bottom: 0px;
+	left: 0px;
 }
 .title-contact {
 	font-weight: 600;
-font-size: 18px;
-padding-bottom: 9px;
-padding-top: 35px;
-line-height: 22px;
-color: #666666;
+	font-size: 18px;
+	padding-bottom: 9px;
+	padding-top: 29px;
+	line-height: 22px;
+	color: #666666;
 }
 .title-contact:first-of-type {
 	padding-top: 0;
@@ -2227,8 +2255,8 @@ a.item-contact {
 }
 .contacts__info {
 	font-size: 14px;
-line-height: 24px;
-color: #666666;
+	line-height: 24px;
+	color: #666666;
 }
 .social-page {
 	display: flex;
@@ -2244,39 +2272,40 @@ color: #666666;
 }
 .social-page li a {
 	width: 45px;
-height: 45px;
-font-size: 18px;
-color: #fff;
-background-color: #29333C;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-transition: all 0.3s;
+	height: 45px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #29333C;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s;
 }
 .social-page li a:hover {
-opacity: 0.8;
+	opacity: 0.8;
 }
 .block-form {
-	padding: 35px 41px;
+	padding: 25px 41px;
+	padding-bottom: 20px;
 	background-color: #F7F7F7;
-border-radius: 20px;
+	border-radius: 20px;
 }
 .block-form__title {
-font-size: 21px;
-line-height: 25px;
-padding-bottom: 13px;
-text-align: center;
+	font-size: 21px;
+	line-height: 25px;
+	padding-bottom: 13px;
+	text-align: center;
 	font-weight: 900;
-color: #111C26;
+	color: #111C26;
 }
 .block-form__descr {
-font-size: 14px;
-line-height: 17px;
-padding-bottom: 27px;
-text-align: center;
+	font-size: 14px;
+	line-height: 17px;
+	padding-bottom: 27px;
+	text-align: center;
 	font-weight: 500;
-color: #666666;
+	color: #666666;
 }
 .block-form .btn-main {
 	margin-top: 7px;
@@ -2285,7 +2314,7 @@ color: #666666;
 	width: 100%;
 }
 .block-form .checkbox {
-	margin-top: 23px;
+	margin-top: 18px;
 }
 .contacts  .block-form {
 	width: 378px;
@@ -2302,9 +2331,9 @@ color: #666666;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-border: 1px solid #ECEDEE;
-border-radius: 20px;
-margin-bottom: 21px;
+	border: 1px solid #ECEDEE;
+	border-radius: 20px;
+	margin-bottom: 21px;
 }
 .item-team__image img {
 	max-width: 100%;
@@ -2312,26 +2341,26 @@ margin-bottom: 21px;
 }
 .item-team__name {
 	font-weight: 900;
-font-size: 18px;
-line-height: 22px;
-color: #111C26;
-display: block;
-margin-bottom: 4px;
+	font-size: 18px;
+	line-height: 22px;
+	color: #111C26;
+	display: block;
+	margin-bottom: 4px;
 }
 .item-team {
-		font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-margin-bottom: 30px;
-text-align: center;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	margin-bottom: 30px;
+	text-align: center;
 }
 .item-team__descr {
-margin-bottom: 10px;
-text-align: center;
-color: #666666;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #666666;
 }
 .item-team__contact a {
-color: #2F3130;
+	color: #2F3130;
 }
 .item-team__contact {
 	margin-bottom: 13px;
@@ -2358,24 +2387,227 @@ color: #2F3130;
 }
 .item-partner {
 	height: 96px;
-border: 1px solid #E6E6E6;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 10px;
+	border: 1px solid #E6E6E6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	position: relative;
 }
 .item-partner img {
 	max-width: 100%;
 	max-height: 100%;
-	filter: grayscale(100%);
 	transition: all 0.3s;
 }
-.item-partner:hover img {
-		filter: grayscale(0%);
+.item-partner__hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: all 0.3s;
+	background-color: #fff;
+}
+.item-partner:hover .item-partner__hover {
+	opacity: 1;
 }
 .partners .title-page {
 	padding-bottom: 32px;
 }
 .partners {
 	padding-bottom: 60px;
+}
+.catalog-block {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+  not supported by any browser */
+}
+.breadcumbs-wrap {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #F7F7F7;
+}
+.contacts .block-form .checkbox label span:after {
+	color: #f4d019;
+}
+.contacts .block-form .checkbox {
+	color: #999;
+}
+.consultation .title-page {
+	max-width: 900px;
+}
+.consultation-name {
+	font-size: 22px;
+	line-height: 24px;
+	color: #263C49;
+}
+.consultation-descr {
+	font-size: 16px;
+	line-height: 27px;
+	color: #BFBFBF;
+}
+.consultation-contact {
+	font-size: 18px;
+	line-height: 24px;
+	margin: 10px 0;
+	color: #1B9958;
+	font-family: 'FF Nort';
+}
+.consultation-contact a {
+	color: #1B9958;
+}
+.consultation {
+	padding-bottom: 74px;
+}
+.consultation-text {
+	line-height: 24px;
+	color: #263C49;
+}
+.consultation-image {
+	width: 110px;
+	height: 100px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	position: relative;
+}
+.consultation-image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.consultation-image::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 12px;
+	height: 12px;
+	right: 5px;
+	bottom: 16px;
+	background: #56B120;
+	border: 2px solid #FFFFFF;
+	border-radius: 50%;
+}
+.consultation-block {
+	padding: 35px 40px;
+	background-color: #F7F7F7;
+	border-radius: 20px;
+	margin-top: 39px;
+}
+.consultation-block__title  {
+	font-size: 24px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #263C49;
+}
+.consultation-block__descr {
+	font-size: 18px;
+	line-height: 30px;
+	padding-top: 10px;
+	padding-bottom: 24px;
+	color: #263C49;
+}
+.agree-form {
+	line-height: 24px;
+	margin-top: 26px;
+	color: #263C49;
+}
+.agree-form a {
+	color: #1B9958;
+}
+.consultation-block .item-form {
+	max-width: 300px;
+}
+.consultation-block .btn-main {
+	height: 62px;
+	width: 100%;
+	max-width: 300px;
+}
+.consultation-block__left {
+	padding-left: 60px;
+	border-left: 1px solid #ddd;
+}
+.mortgage__image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
+.mortgage {
+	line-height: 24px;
+}
+.list-main_columns {
+	columns: 2;
+}
+.list-main {
+	padding-top: 10px;
+}
+.list-main li {
+	padding-left: 60px;
+	min-height: 41px;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.list-main li::before {
+	position: absolute;
+	display: flex;
+	content: " ";
+	width: 41px;
+	height: 41px;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	background: #D2F0E2;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../img/arrow_li.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 19px;
+line-height: 24px;
+color: #1B9958;
+}
+.mortgage p {
+	margin-bottom: 15px;
+}
+.list-main li p {
+	margin: 0;
+}
+.title-small {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 700;
+}
+.list-main_numbers {
+	counter-reset: list1;
+}
+.list-main_numbers li:before {
+	counter-increment: list1;
+	content: counter(list1) ". ";
+	background-image: none;
+}
+.mortgage .list-main_numbers {
+	max-width: 435px;
+}
+.mortgage .title-small {
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+.mortgage {
+	padding-bottom: 45px;
+}
+.mortgage .title-page {
+	padding-bottom: 26px;
 }

@@ -240,6 +240,12 @@
     .partners-wrap {
         margin: 0 -10px;
     }
+    .consultation-block__left {
+    padding-left: 25px;
+}
+.consultation-block {
+    padding: 35px 24px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -469,6 +475,16 @@ height: initial;
 }
 .partners-wrap__item {
     width: 25%;
+}
+.consultation-block__left {
+    padding-left: 15px;
+    border: none;
+}
+.consultation-block__title {
+    padding-top: 15px;
+}
+.list-main li  {
+    min-height: 50px;
 }
 }
 
@@ -715,6 +731,36 @@ height: initial;
 .partners {
     padding-bottom: 50px;
 }
+.team-page {
+    padding-bottom: 20px;
+}
+.team-page ~ .partners {
+    padding-bottom: 25px;
+}
+.consultation-block__title {
+    font-size: 21px;
+    }
+    .consultation-block__descr {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.consultation-block {
+    padding: 25px 20px;
+}
+.consultation {
+    padding-bottom: 50px;
+}
+.mortgage .title-page {
+    padding-bottom: 15px;
+}
+.list-main_columns {
+    columns: initial;
+}
+.mortgage .title-small {
+    padding-top: 0;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -956,7 +1002,7 @@ body {
     margin-bottom: 20px;
 }
 .team-page { 
-    padding-bottom: 30px; 
+    padding-bottom: 30px;  
 }
 .partners-wrap__item {
     width: 33%; 
@@ -977,6 +1023,49 @@ body {
 }
 .item-partner {
     height: 80px;
+}
+.consultation-block__title {
+    font-size: 18px;
+}
+.consultation-block__descr {
+    font-size: 14px;
+    line-height: 22px;
+}
+.consultation-text {
+    line-height: 23px;
+    }
+    .agree-form {
+    line-height: 22px;
+    margin-top: 20px;
+}
+.consultation-block {
+    margin-top: 25px;
+}
+.breadcumbs-wrap {
+    margin-bottom: 25px;
+    }
+    .list-main {
+        padding-top: 0;
+    }
+    .list-main li {
+        min-height: 41px;
+        margin-bottom: 12px;
+    }
+    .mortgage {
+    line-height: 23px;
+} 
+.mortgage .title-small {
+    padding-top: 10px;
+}
+.title-small {
+    font-size: 19px;
+    line-height: 27px;
+    }
+    .mortgage .title-small {
+        padding-bottom: 15px;
+    }
+    .mortgage {
+    padding-bottom: 25px;
 }
 }
 @media only screen and (max-width : 370px) {
