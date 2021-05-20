@@ -18,9 +18,9 @@
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
-	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.4" />
-	<link rel="stylesheet" href="css/media.css?ver=1.4" /> 
+	<link rel="stylesheet" href="css/fonts.css?ver=1.2" />
+	<link rel="stylesheet" href="css/main.css?ver=1.8" />
+	<link rel="stylesheet" href="css/media.css?ver=1.8" />
 </head>
 <body>
 
@@ -153,8 +153,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="catalog-wrap">
-					<div class="catalog-wrap__left" id="sidebar">
+				<div class="catalog-wrap" id="catalog-wrap">
+					<div class="catalog-wrap__left" id="left_panel">
 						<span id="position"></span>
 						<div id="dragbar">
 							<div class="dragbutton"><i class="far fa-arrows-alt-h"></i></div>
@@ -486,7 +486,7 @@
 						</div>
 
 					</div>
-					<div class="catalog-wrap__right">
+					<div class="catalog-wrap__right" id="right_panel">
 						<div id="map-catalog"></div>
 					</div>
 				</div>
@@ -601,7 +601,7 @@
 <script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.4"></script> 
+<script src="js/common.js?ver=1.7"></script> 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script>
 	$(document).ready(function() {
@@ -642,40 +642,31 @@
 			myMap.geoObjects.add(myPlacemark);
 			myMap.geoObjects.add(myPlacemark2);
 
+			var isResizing = false,
+    lastDownX = 0;
 
-			var i = 0;
-			var dragging = false;
-			$('#dragbar').mousedown(function(e){
-				e.preventDefault();
+$(function () {
+    var container = $('#catalog-wrap'),
+        left = $('#right_panel'),
+        right = $('#left_panel'),
+        handle = $('#dragbar');
 
-				dragging = true;
-				var main = $('#map-catalog');
-				var ghostbar = $('<div>',
-					{id:'ghostbar',
-					css: {
-						height: main.outerHeight(),
-						top: main.offset().top,
-						left: main.offset().left
-					}
-				}).appendTo('body');
+    handle.on('mousedown', function (e) {
+        isResizing = true;
+        lastDownX = e.clientX;
+    });
 
-				$(document).mousemove(function(e){
-					ghostbar.css("left",e.pageX+2);
-					myMap.container.fitToViewport();
-				});
-			});
+    $(document).on('mousemove', function (e) {
+        // we don't want to do anything if we aren't resizing.
+        if (!isResizing) 
+            return;
 
-			$(document).mouseup(function(e){
-				if (dragging) 
-				{
-					$('#sidebar').css("width",e.pageX+2);
-					$('.catalog-wrap__right').css("left",e.pageX+2);
-					$('#ghostbar').remove();
-					$(document).unbind('mousemove');
-					dragging = false;
-					myMap.container.fitToViewport();
-
-					{
+        var offsetRight = container.width() - (e.clientX - container.offset().left);
+        var widthparent = $(".catalog-wrap").width();
+         right.css('width', widthparent - offsetRight);
+         left.css('left', widthparent - offsetRight);
+        	myMap.container.fitToViewport();
+        	{
 						if ($(".catalog-wrap__left").width() > 992) { 
 
 							$(".row_catalog > div").addClass("col-xl-3");
@@ -703,12 +694,15 @@
 							$(".row_catalog > div").removeClass("col-lg-12");
 						}
 					}
+    }).on('mouseup', function (e) {
+        // stop resizing
+        isResizing = false;
+    });
+});
 
-
-				}
-			});
 
 		}
+
 	});
 </script> 
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
