@@ -108,6 +108,35 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		]
 	});
 
+	$('.slider-sertificats').slick({
+		dots: true,
+		arrows: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow:3,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow:2,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow:1,
+			}
+		},
+		]
+	});
+
 		$('.phone-block__link').click(function(event) {
 		event.preventDefault();
 		$(this).parent().addClass("active");
