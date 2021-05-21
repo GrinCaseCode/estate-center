@@ -29,7 +29,7 @@ body {
 	overflow-x: hidden;
 	margin: 0;
 	color: #111c26;
-	background-color: #fff; 
+	background-color: #fff;  
 } 
 button { 
 	cursor: pointer;
@@ -1294,6 +1294,7 @@ select {
 	font-weight: 700;
 	margin-bottom: 18px;
 	color: #2f3130;
+	transition: all 0.3s;
 	display: block;
 }
 .text-news {
@@ -1323,9 +1324,9 @@ select {
 	border-radius: 20px;
 	transition: all 0.3s;
 }
-.big-news:hover,
-.item-news:hover {
-	box-shadow: 0px 5px 25px 0px rgb(190 191 191 / 20%);
+.big-news:hover .title-news,
+.item-news:hover .title-news {
+	color: #17AF4F;
 }
 .item-news__image {
 	width: 228px;
@@ -2576,8 +2577,8 @@ a.item-contact {
 	background-repeat: no-repeat;
 	background-position: center;
 	font-size: 19px;
-line-height: 24px;
-color: #1B9958;
+	line-height: 24px;
+	color: #1B9958;
 }
 .mortgage p {
 	margin-bottom: 15px;
@@ -2611,3 +2612,310 @@ color: #1B9958;
 .mortgage .title-page {
 	padding-bottom: 26px;
 }
+.sidebar-news .title-middle {
+	font-weight: 900;
+}
+.news-page .item-news {
+	padding: 0;
+	display: block;
+}
+.news-page .item-news__image {
+	height: 198px;
+	width: 100%;
+	border-radius: 12px 12px 0px 0px;
+}
+.news-page .item-news__image img {
+	border-radius: 12px 12px 0px 0px;	
+}
+.news-page .item-news__content {
+	padding: 30px;
+}
+.news-page .row_news > div {
+	margin-top: 50px;
+}
+.news-page .btn-simple_more {
+	margin-top: 50px;
+}
+.news-page {
+	padding-bottom: 74px;
+}
+.news-page .title-page {
+	padding-bottom: 38px;
+}
+.item-sidebar {
+	margin-top: 38px;
+	height: 245px;
+	color: #2F3130;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	position: relative;
+	display: block; 	
+	border-radius: 12px;
+	z-index: 1;
+}
+.item-sidebar::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 12px;
+	background: linear-gradient(360deg, #F7F7F7 0%, rgba(255, 255, 255, 0) 269.39%);
+	z-index: 0;
+}
+.item-sidebar img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 12px;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.item-sidebar__content {
+	position: absolute;
+	left: 0;
+	padding: 0 25px;
+	width: 100%;
+	bottom: 37px;
+}
+.item-sidebar__date {
+	margin-bottom: 9px;
+	display: block;
+}
+.item-sidebar__text {
+	font-size: 22px;
+	line-height: 30px;
+	border-bottom: 1px solid transparent;
+	transition: all 0.3s;
+}
+.item-sidebar:hover .item-sidebar__text {
+	border-color: #2F3130;
+}
+.sidebar-news {
+	padding-left: 35px;
+}
+.article {
+	padding-bottom: 74px;
+}
+.article__image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
+.article__image {
+	margin-bottom: 32px;
+	position: relative;
+	display: inline-block;
+}
+.article .title-page {
+	min-height: 85px;
+	margin-bottom: 38px;
+	display: flex;
+	align-items: flex-end;
+}
+.date-article {
+	padding: 10px 17px;
+	background-color: #17AF4F;
+	border-radius: 20px 0px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #FFFFFF;
+	position: absolute;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.date-article strong {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 700;
+	display: block;
+}
+.date-article span {
+	display: block;
+}
+.article {
+	line-height: 24px;
+}
+.article p {
+	margin-bottom: 8px;
+}
+.article__buttons {
+	padding-top: 30px;
+	display: flex;
+	align-items: center;
+}
+.article__buttons .btn-simple {
+	margin-right: 25px;
+}
+.article__buttons .btn-simple:last-child {
+	margin-right: 0;
+}
+.article__buttons .btn-simple .fa-long-arrow-left {
+	margin-right: 15px;
+}
+.article__buttons .btn-simple .fa-long-arrow-right {
+	margin-left: 15px;
+}
+.article__buttons .btn-simple i {
+	font-size: 18px;
+}
+.article .title-middle {
+	padding-bottom: 24px;
+}
+.article .title-small { 
+	padding-top: 18px;
+	padding-bottom: 13px;
+}
+.article .list-main + .title-small {
+	padding-top: 10px;
+}
+.article .sidebar-news .title-middle {
+	min-height: 85px;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 0;
+}
+.article .list-main li::before {
+	width: 38px;
+	height: 38px;
+	font-size: 16px;
+	background-size: 17px auto;
+}
+.article .list-main li {
+	padding-left: 53px;
+}
+.about__image img {
+	max-width: 100%;
+	border-radius: 20px;
+}
+.item-achievement {
+	padding: 60px 54px;
+	background-color: #F7F7F7;
+border-radius: 20px;
+line-height: 24px;
+text-align: center;
+color: #263C49;
+	min-height: 100%;
+}
+.item-achievement p {
+	margin: 0;
+}
+.item-achievement__title {
+	font-size: 24px;
+line-height: 29px;
+margin-bottom: 15px;
+text-transform: uppercase;
+font-weight: 700;
+color: #111C26;
+}
+.item-achievement__icon {
+	margin-bottom: 53px;
+}
+.item-achievement__icon img {
+	right: -12px;
+	margin: 0 auto;	
+	position: relative;
+}
+.about {
+	line-height: 24px;
+	color: #263C49;
+}
+.about p {
+	margin-bottom: 15px;
+}
+.list-simple li::before {
+	margin-right: 7px;
+	color: #17AF4F;
+	content: "•";
+}
+.list-simple li {
+	margin-bottom: 8px;
+}
+.about .title-page {
+	padding-bottom: 32px;
+	color: #111C26;
+}
+.title-page_achievements {
+	padding-top: 60px;
+}
+.row_achievements > div {
+	margin-bottom: 55px;
+}
+.article p,
+.article li {
+	color: #263C49;	
+}
+.slider-sertificats {
+	margin: 0 -15px;
+	margin-bottom: 50px;
+}
+.item-sertificat {
+	height: 423px;
+	padding: 30px;
+	margin: 0 15px;
+background-color: #F7F7F7;
+border-radius: 20px;
+	display: block;
+	position: relative;
+}
+.item-sertificat img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.item-sertificat::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 20px; 
+	background-color: rgba(255, 255, 255, 0.7);
+	background-image: url(../img/ic_zoom.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0;
+	transition: all 0.3s;
+}
+.item-sertificat:hover::after {
+	opacity: 1;
+}
+.title-page_sertificats {
+	padding-top: 35px;
+}
+.slick-dots {
+	bottom: 0;
+}
+.slick-dots li {
+	width: 8px;
+	height: 8px;
+}
+.slick-dots li button {
+	width: 8px;
+	height: 8px;
+	padding: 0;
+	opacity: 0.6;
+	border: none !important;
+	    background-color: #17AF4F;
+	    transition: all 0.3s;
+}
+.slick-dots li button:hover,
+.slick-dots li.slick-active button {
+	opacity: 1;
+}
+.slider-sertificats .slick-dots {
+	bottom: -30px;
+}   
