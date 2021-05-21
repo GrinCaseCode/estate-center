@@ -1251,7 +1251,7 @@ body {
         font-size: 13px;
         height: 36px;
     }
-    .breadcumbs span {
+    .breadcumbs span { 
         margin: 0 5px;
     }
 }
