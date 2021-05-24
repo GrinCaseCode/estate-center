@@ -2966,7 +2966,7 @@ border-radius: 6px 6px 0px 0px;
 	flex-wrap: wrap;
 }
 .wrap-checkboxes .checkbox {
-	margin-right: 30px;
+	margin-right: 28px;
 }
 .wrap-checkboxes .checkbox:last-child {
 	margin-right: 0;
