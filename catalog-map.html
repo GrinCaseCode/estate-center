@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css?ver=1.2" />
-	<link rel="stylesheet" href="css/main.css?ver=1.8" />
-	<link rel="stylesheet" href="css/media.css?ver=1.8" />
+	<link rel="stylesheet" href="css/main.css?ver=1.15" />
+	<link rel="stylesheet" href="css/media.css?ver=1.15" />
 </head>
 <body>
 
@@ -146,7 +146,7 @@
 						</div>
 					</div>
 					<div class="block-calculator__bottom">
-						<button class="btn-icon">Еще параметры <i class="far fa-plus-circle"></i></button>
+						<a href="#modal-filter" class="btn-icon fancybox">Еще параметры <i class="far fa-plus-circle"></i></a>
 						<div class="block-calculator__right">
 							<button class="btn-icon">Очистить <i class="far fa-trash"></i></button>
 							<button class="btn-main">Показать 34 предложения</button>
@@ -587,6 +587,141 @@
 		
 	</div>
 
+	<div id="modal-filter" class="modal-block">
+		<div class="container">
+			<div class="modal-wrap">
+				<div class="modal-wrap__content">
+					<div class="title-page">Еще фильтры</div>
+				<div class="title-filter">Радиус поиска</div>
+				<ul class="list-filter">
+					<li><div class="item-filter">Севастополь</div></li>
+					<li><div class="item-filter">Севастополь +10 км</div></li>
+					<li><div class="item-filter">Севастополь +20 км</div></li>
+				</ul>
+				<div class="title-filter">Тип дома</div>
+				<ul class="list-filter">
+					<li><div class="item-filter">Неважно</div></li>
+					<li><div class="item-filter">Кирпичный</div></li>
+					<li><div class="item-filter">Деревянный</div></li>
+					<li><div class="item-filter">Монолитные</div></li>
+					<li><div class="item-filter">Щитовые</div></li>
+					<li><div class="item-filter">Каркасный</div></li>
+					<li><div class="item-filter">Газобетон</div></li>
+					<li><div class="item-filter">Пеноблок</div></li>
+				</ul>
+				<div class="title-filter">Наличие коммуникаций</div>
+				<ul class="list-filter">
+					<li><div class="item-filter">Неважно</div></li>
+					<li><div class="item-filter">Газ</div></li>
+					<li><div class="item-filter">Вода</div></li>
+					<li><div class="item-filter">Канализация</div></li>
+					<li><div class="item-filter">Свет</div></li>
+				</ul>
+				<div class="wrap-checkboxes">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" checked="checked">
+							<span>С 3D туром</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Только с фото</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Только с видео</span>
+						</label>
+					</div>
+				</div>
+				<div class="wrap-checkboxes">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>У моря</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Вид</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Ландшафтный дизайн</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Все коммуникации</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Баня</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Гостевой домик</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Инфраструктура</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Статустность</span>
+						</label>
+					</div>
+				</div>
+				<div class="wrap-checkboxes">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Бассейн</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Терраса</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Зимний сад</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">
+							<span>Юридическая проверка</span>
+						</label>
+					</div>
+				</div>
+				</div>
+				<div class="bottom-filter">
+					<button class="btn-icon">Очистить <i class="far fa-trash"></i></button>
+					<button class="btn-main">Показать 34 предложения</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -601,7 +736,7 @@
 <script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.7"></script> 
+<script src="js/common.js?ver=1.15"></script> 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script>
 	$(document).ready(function() {
