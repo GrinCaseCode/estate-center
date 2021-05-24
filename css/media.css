@@ -875,6 +875,29 @@
     margin-left: -10px;
     margin-right: -10px;
 }
+
+.modal-wrap__content {
+    padding: 15px;
+}
+.item-filter {
+    padding: 0 17px;
+    margin-right: 11px;
+    min-width: 120px;
+}
+.wrap-checkboxes .checkbox {
+    margin-right: 15px;
+}
+.bottom-filter {
+    padding: 20px 15px;
+    justify-content: center;
+}
+.bottom-filter .btn-main {
+    margin-left: 13px;
+    padding: 0 19px;
+}
+.wrap-checkboxes {
+    margin-top: 15px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -1241,6 +1264,30 @@ body {
 }
 .item-achievement__icon {
     margin-bottom: 25px;
+}
+
+.item-filter {
+    padding: 0 9px;
+    margin-right: 7px;
+    min-width: 114px;
+}
+.title-filter {
+    padding-top: 18px;
+}
+.bottom-filter {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+}
+.bottom-filter .btn-main {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+.bottom-filter  .btn-icon {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
 }
 }
 @media only screen and (max-width : 370px) {

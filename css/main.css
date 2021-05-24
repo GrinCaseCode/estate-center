@@ -2919,3 +2919,111 @@ border-radius: 20px;
 .slider-sertificats .slick-dots {
 	bottom: -30px;
 }   
+
+.modal-wrap {
+	background-color: #f7f7f7;
+border-radius: 20px;
+}
+.modal-block {
+	display: none;
+}
+.title-filter {
+	padding-top: 28px;
+	font-weight: 600;
+color: #2f3130;
+}
+.list-filter {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.item-filter {
+	height: 46px;
+	padding: 0 22px;
+	font-size: 14px;
+	margin-top: 12px;
+	margin-right: 11px;
+color: #666666;
+	min-width: 130px;
+background-color: #ffffff;
+border-radius: 6px 6px 0px 0px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	transition: all 0.3s;
+	cursor: pointer;
+	border-bottom: 2px #d7d8d9 solid;
+}
+.item-filter:hover,
+.item-filter.active {
+	background-color: #d7d8d9;
+}
+.wrap-checkboxes {
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.wrap-checkboxes .checkbox {
+	margin-right: 30px;
+}
+.wrap-checkboxes .checkbox:last-child {
+	margin-right: 0;
+}
+.fancybox-inner {
+	overflow: visible !important;
+}
+.fancybox-skin {
+	padding: 0 !important;
+	box-shadow: none !important;
+	background-color: transparent !important;
+}
+.bottom-filter {
+	margin-top: 5px;
+	padding: 22px 25px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	box-shadow: 0 -7px 10px rgba(212, 210, 210, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.bottom-filter .btn-main {
+	margin-left: 24px;
+}
+.modal-wrap__content {
+	padding: 30px;
+}
+.fancybox-close {
+	top: 14px;
+	right: 14px;
+	width: 20px;
+	height: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	color: #1b9958;
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 400;
+	font-size: 21px;
+	border-radius: 50%;
+	background:none !important;
+}
+.fancybox-close:before {
+	content: "\f057";
+}
+.modal-block .container {
+	padding: 0;
+}
