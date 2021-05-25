@@ -1289,6 +1289,18 @@ body {
     max-width: 300px;
     justify-content: center;
 }
+.modal-wrap_callback {
+    padding: 40px 15px;
+    padding-bottom: 25px;
+}
+.title-modal {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 8px;
+    }
+    .descr-modal {
+        margin-bottom: 15px;
+    }
 }
 @media only screen and (max-width : 370px) {
     .item-map__prices {

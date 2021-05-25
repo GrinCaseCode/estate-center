@@ -3049,3 +3049,50 @@ border-radius: 6px 6px 0px 0px;
 .item-team__image:hover .item-team__imageback {
 	opacity: 1;
 }
+.modal-wrap_callback {
+	width: 378px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 40px;
+}
+.title-modal {
+font-size: 21px;
+line-height: 25px;
+margin-bottom: 11px;
+text-align: center;
+	font-weight: 900;
+color: #111C26;
+}
+.descr-modal {
+	font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #666666;
+margin-bottom: 26px;
+}
+.modal-wrap_callback .btn-main {
+	width: 100%;
+	display: flex;
+}
+.modal-wrap_callback .btn-main,
+.modal-wrap_callback .item-form {
+	width: 268px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.modal-wrap_callback .checkbox {
+	margin-top: 20px;
+	color: #999999;
+}
+.modal-wrap_callback .checkbox label span:after {
+color: #f4d019;
+}
+.fancybox-close {
+	color: #b7babd;
+	transition: all 0.3s;
+}
+.fancybox-close:hover {
+	    color: #111C26
+}
