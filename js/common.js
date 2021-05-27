@@ -1,6 +1,18 @@
 $(document).ready(function() {
 
 
+
+$(".item-timeline__circle").click(function(e) {
+		e.preventDefault();
+		$(this).parent().addClass("active");
+		$(this).parent().prevAll(".item-timeline").addClass("active");
+		$(this).parent().nextAll(".item-timeline").removeClass("active");
+		$(".item-timeline__content").removeClass("active");
+		$(this).siblings(".item-timeline__content").addClass("active");
+	
+	});
+
+
 $(".item-filter").click(function(e) {
 		e.preventDefault();
 		$(this).toggleClass("active");
