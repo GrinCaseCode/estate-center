@@ -19,14 +19,14 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css?ver=1.2" />
-	<link rel="stylesheet" href="css/main.css?ver=1.16" />
-	<link rel="stylesheet" href="css/media.css?ver=1.16" />
+	<link rel="stylesheet" href="css/main.css?ver=1.21" />
+	<link rel="stylesheet" href="css/media.css?ver=1.21" />
 </head>
 <body>
 
 	<div class="wrapper">
 
-		<header class="header default">
+		<header class="header header_main default">
 			<div class="container"> 
 				<div class="header__line">
 					<a href="#" class="logo">
@@ -436,7 +436,8 @@
 					<form>
 						<div class="phone-form">
 							<div class="item-form">
-								<input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+								<input type="text" class="input-phone" required="required">
+								<div class="item-form__placeholder">Телефон</div>
 							</div>
 							<button class="btn-main" type="submit">Разблокировать лоты</button>
 						</div>
@@ -612,12 +613,13 @@
 						<div class="row align-items-center">
 							<div class="col-md-4">
 								<div class="item-form">
-									<input type="text" placeholder="Ваше имя" required="required">
+									<input type="text"  required="required">
+									<div class="item-form__placeholder">Ваше имя</div>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="item-form">
-									<input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+									<input type="text" placeholder="Телефон" class="input-phone" required="required">
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -944,7 +946,7 @@
 					<input type="text" placeholder="Ваше имя" required="required">
 				</div>
 				<div class="item-form">
-					<input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+					<input type="text" placeholder="Телефон" class="input-phone" required="required">
 				</div>
 				<button class="btn-main" type="submit">Жду звонка</button>
 				<div class="checkbox-wrap">
@@ -973,7 +975,7 @@
 <script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.16"></script> 
+<script src="js/common.js?ver=1.21"></script> 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script>
 	$(document).ready(function() {
